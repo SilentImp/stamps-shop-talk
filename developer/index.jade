@@ -6,6 +6,142 @@ block title
 block slides
     article.title
 
+    article.stek.center.cloud
+        h1 
+            .wrapper Стек
+            
+    article.center
+        .wrapper
+            img.illustration(src="images/heisencat.png", alt="Иллюстрация")
+            
+    article.center
+        .wrapper
+            img.illustration(src="images/parse.svg", alt="Иллюстрация")
+            
+    article.center
+        .wrapper
+            img.illustration(src="images/stripe.svg", alt="Иллюстрация")
+            
+    article.center
+        .wrapper
+            img.illustration(src="images/mandrill.svg", alt="Иллюстрация")
+
+    article.center
+        .wrapper
+            img.illustration(src="images/travis-ci.svg", alt="Иллюстрация")
+
+    article.center
+        .wrapper
+            img.illustration(src="images/gulp.svg", alt="Иллюстрация")
+            
+    article.center
+        .wrapper
+            img.illustration(src="images/webpack.svg", alt="Иллюстрация")
+
+    article.center
+        .wrapper
+            img.illustration(src="images/react.svg", alt="Иллюстрация")
+
+
+    article.list
+        .cell
+            img.illustration(src="images/heisencat.png", alt="Иллюстрация")
+        .cell
+            img.illustration(src="images/parse.svg", alt="Иллюстрация")
+        .cell
+            img.illustration(src="images/stripe.svg", alt="Иллюстрация")
+        .cell
+            img.illustration(src="images/mandrill.svg", alt="Иллюстрация")
+        .cell
+            img.illustration(src="images/travis-ci.svg", alt="Иллюстрация")
+        .cell
+            img.illustration(src="images/gulp.svg", alt="Иллюстрация")
+        .cell
+            img.illustration(src="images/webpack.svg", alt="Иллюстрация")
+        .cell
+            img.illustration(src="images/react.svg", alt="Иллюстрация")
+
+    
+    article.folders.center.cloud
+        h1 
+            .wrapper Структура
+
+                
+    article.center.structure
+        .wrapper
+            .half
+                ul
+                    li /source
+                    li /cloudcode
+                    li /build
+            .half
+                ul
+                    li .travis.yml
+                    li gulpfile.js
+                    li package.json
+                    li webpack.config.js
+                    li .gitignore
+                    
+    article.build.center.cloud
+        h1 
+            .wrapper Сборка
+            
+    article.center
+        .wrapper
+            img.illustration(src="images/webpack.svg", alt="Иллюстрация")
+            
+    article.center.code-2
+        .wrapper
+            pre
+                code.javascript="module.exports = {\n  entry: [\n    path.join(__dirname, \n      'source/js/app.js'\n    'file?name=index.html\n      !jade-html\n      !./source/index.jade'),\n  ]\n}"
+    
+    article.center
+        .wrapper
+            img.illustration(src="images/gulp.svg", alt="Иллюстрация")
+            
+    article.center.code-2
+        .wrapper
+            pre
+                code.javascript="npm install --save gulp-gh-pages"
+                
+    article.center.code-2
+        .wrapper
+            pre
+                code.bash="gulp.task('build', function () {\n  return gulp.src('build/**')\n    .pipe(build({\n      branch: 'gh-pages',\n      cacheDir: 'gh-cache',\n      remoteUrl: '[…].git'\n    });\n    }));\n});"
+                
+    article.center
+        .wrapper
+            img.illustration(src="images/heisencat.png", alt="Иллюстрация")
+    
+    article.center.code-1
+        .wrapper
+            pre
+                code="CNAME"
+    
+    article.center.code-1
+        .wrapper
+            pre
+                code="./source/copy/CNAME"
+                
+    article.center.code-1
+        .wrapper
+            pre
+                code="stumps.pp.ua"
+            pre
+                del 
+                    code="http://stumps.pp.ua/"
+            
+    article.center.domains
+        .wrapper        
+            p 192.30.252.153
+            p 192.30.252.154
+            
+            
+    article.center.code-3
+        .wrapper
+            pre
+                code.bash="dig example.com +nostats +nocomments +nocmd\n;example.com\nexample.com.   73  IN  A 192.30.252.153\nexample.com.   73  IN  A 192.30.252.154"
+
     article.domain.center.cloud
         h1 
             .wrapper Домен
@@ -72,14 +208,18 @@ block slides
         .flag.kz
         .flag.ru
     
-    article.online-sim.freenom-0.center
-        h1
-            a(href="http://onlinesim.ru/", data-click=true) http://onlinesim.ru/
-            
-    article.online-sim.freenom-0.center
-        h1
-            a(href="http://freezvon.ru/", data-click=true) http://freezvon.ru/
-    
+    //- article.online-sim.freenom-0.center
+    //-     h1
+    //-         a(href="http://onlinesim.ru/", data-click=true) http://onlinesim.ru/
+    //-         
+    //- article.online-sim.freenom-0.center
+    //-     h1
+    //-         a(href="http://freezvon.ru/", data-click=true) http://freezvon.ru/
+    //- 
+    //- article.online-sim.freenom-0.center
+    //-     h1
+    //-         a(href="http://sms-activate.ru/", data-click=true) http://sms-activate.ru/
+    //- 
     article.ppua-6
     article.ppua-7
     article.ppua-8
@@ -107,6 +247,35 @@ block slides
                 li ns3.he.net
                 li ns4.he.net
                 li ns5.he.net
+    
+    
+    article.lamber.center.cloud
+        h1 
+            .wrapper Автосборка
+
+    
+    
+    article.center
+        .wrapper
+            img.illustration(src="images/travis-ci.svg", alt="Иллюстрация")
+
+    
+    article.travis
+    
+    article.center.code-1
+        .wrapper
+            pre
+                code.bash="npm install travis-encrypt -g"
+                
+    article.token
+                
+    article.center.code-1
+        .wrapper
+            pre
+                code.bash="travis-encrypt --add -r SilentImp/stamps GH_TOKEN=[токен]"
+    
+    //f2521fec2703263dd1af77bf2b79f967ad883a22
+    //travis-encrypt --add -r SilentImp/stamps GH_TOKEN=f2521fec2703263dd1af77bf2b79f967ad883a22
     
     // http://freenom.com/
     // .tk — Токелау
